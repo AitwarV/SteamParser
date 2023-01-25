@@ -21,7 +21,7 @@ checkbox = label.find_element(By.CSS_SELECTOR, 'span.ui-checkboxradio-icon.ui-co
 
 items = browser.find_elements(By.CLASS_NAME, 'market_listing_item_name_block')
 floats = browser.find_elements(By.CLASS_NAME, 'itemfloat')
-
+time.sleep(30)
 name = [x.text for x in items]
 floats_item = [x.text for x in floats]
 
